@@ -1,0 +1,316 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    background-color: #81CD32;
+    display: flex;
+    padding: 0;
+    margin: 0 0;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    display: inline;
+}
+
+.logo img {
+    display: inline-flex;
+    padding: 10px;
+}
+
+.nav {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+
+.navitem {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    margin: 35px;
+    padding: 5px 15px;
+    background-color: #CD3281;
+    flex-shrink: 1;
+}
+
+.nav p {
+    font-size: 1.5rem;
+}
+
+/*BANNER*/
+
+.banner {
+    background-image: url("./images/Banner.avif");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: auto;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 40px 20px;
+}
+
+
+h1 {
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 150px;
+    padding: 40px 0px;
+    margin: 0;
+    opacity: 100%;
+    text-shadow: #3281CD 5px 5px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width : 1115px){
+    h1 {
+        font-size: 100px;
+    }
+}
+
+/*MISSION*/
+
+.mission {
+    background-color: #CD3281;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h2 {
+    color: black;
+    font-size: 35px;
+    line-height: 1.25;
+    padding: 20px 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*GAMES*/
+.container {
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "games abstract modern dexterity"
+                         "games chess catan crokinole"
+                         "games backgammon ticket klask";
+    margin: 60px;
+    gap: 10px;
+    justify-content: center;
+}
+
+p {
+    font-size: 2rem;
+    color: white;
+}
+
+.games {
+    background-color: #CD3281;
+    display: flex;
+    grid-area: games;
+    justify-content: center;
+    align-items: center;
+}
+
+.games p {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+    color: white;
+}
+
+.abstract {
+    background-color: #3281CD;
+    grid-area: abstract;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modern {
+    background-color: #3281CD;
+    grid-area: modern;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.dexterity {
+    background-color: #3281CD;
+    grid-area: dexterity;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.chess {
+    background-color: #81CD32;
+    grid-area: chess;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backgammon {
+    background-color: #81CD32;
+    grid-area: backgammon;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catan {
+    background-color: #81CD32;
+    grid-area: catan;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.ticket {
+    background-color: #81CD32;
+    grid-area: ticket;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.crokinole {
+    background-color: #81CD32;
+    grid-area: crokinole;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.klask {
+    background-color: #81CD32;
+    grid-area: klask;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+}
+
+.game p {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width : 1464px){
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    .game img {
+        max-width: 400px;
+    }
+    .abstract {
+        display: none;
+    }
+    .modern {
+        display: none;
+    }
+    .dexterity {
+        display: none;
+    }
+    .games p {
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+    }
+    .games {
+        width: 100%;
+    }
+    .game {
+        flex-grow: 1;
+    }
+}
+
+/*EMPLOYEES*/
+
+.employee-section {
+    background-color: #3281CD;
+    margin: 0;
+}
+
+.employees {
+    text-align: center;
+}
+
+.who {
+    font-size: 4rem;
+    color: #81CD32;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: none;
+    text-align: center;
+}
+
+.employees-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.employee p {
+    color: black;
+}
+
+.employee img {
+    width: auto;
+    height: 200px;
+    border: solid 25px #CD3281;
+}
+
+.emp2 {
+    margin-left: 40px;
+}
+
+@media only screen and (max-width : 1280px){
+    employee {
+        width: 100%;
+    }
+}
+
+/*FOOTER*/
+footer {
+    background-color: #81CD32;
+    height: 50px;
+    text-align: right;
+    margin: 0;
+}
+
+footer p {
+    font-size: 1.5rem;
+    color: black;
+    padding-top: 10px;
+    padding-right: 15px;
+}
